@@ -1,24 +1,81 @@
+<!DOCTYPE>
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>To Do</title>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="toDo.css">
+  <title>My First App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
 </head>
-  <body>
-    <div class="jumbotron">
-      <div class="container header-top">
-        <h1>TestOne</h1>
-        <p>This is my first header</p>
+<body>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Phone Numbers</h1>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</section>
 
-  <section>
-      <div class="jumbotron">
-        <table border="1" style="width:100%">
-        <tr>
-        <center>Table</center>
-        </tr>
-      </table>
-  </section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading"></div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Phone</th>
+                                <!-- <th>&nbsp;</th> -->
+                            </tr>
+                        </thead>
+              <tbody id='toDoTable'>
+              </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading warningMessage"></div>
+                        <div class="panel-body">
+                            <form class="form-inline">
+                            <div class="form-group">
+                        <input type="text" class="form-control" id="newFirstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="newLastName" placeholder="Last Name">
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" id="newPhone" placeholder="Phone Number">
+                          </div>
+                        <button type="submit" id="createToDo" class="btn btn-primary" >Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+</section>
+
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
