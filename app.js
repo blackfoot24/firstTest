@@ -3,3 +3,5 @@ var personTwo = {firstName: "sally", lastName: "johnson", phoneNumber: '404-334-
 var personThree = {firstName: "sue", lastName: "johnson", phoneNumber: '404-335-3223'};
 
 var people = [personOne, personTwo, personThree];
+
+var $list = $('#testOneTable');
